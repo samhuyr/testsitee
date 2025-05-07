@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WebVazar IT Solutions</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+    <nav class="navbar">
+            <div class="logo">
+                <img src="C:\Users\gupta\Downloads\New\LOGO_2__1_-removebg-preview.png" alt="WebVazar Logo" class="logo-img">
+                <span>WebVazar IT Solutions</span>
+            </div>
+            <button id="mobile-menu-toggle" aria-label="Open navigation menu" aria-expanded="false">
+                <span class="hamburger"></span>
+            </button>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <ul class="mobile-nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+    </nav>
+    </header>
+    <main>
+        <section id="home" class="hero-section">
+            <canvas id="hero-3d-bg" style="position:absolute;top:0;left:0;width:100%;height:100%;z-index:0;"></canvas>
+            <div class="hero-content" style="position:relative;z-index:1;">
+                <img src="C:/Users/gupta/Downloads/New/LOGO_2__1_-removebg-preview.png" alt="WebVazar Logo" class="logo-img" style="margin-bottom: 1.2rem;">
+                <h1>Empowering Your Digital Presence</h1>
+                <p>Modern solutions for your business, crafted with care and innovation.</p>
+                <a href="#contact" class="cta-button">Get Started</a>
+            </div>
+            <div class="hero-illustration" style="position:relative;z-index:1;">
+                <img src="https://undraw.co/api/illustrations/modern-design.svg" alt="Modern Design" />
+            </div>
+        </section>
+        <section id="about" class="about-section">
+            <h2>About Us</h2>
+            <p>We are a team of passionate professionals dedicated to delivering top-notch digital solutions. Our mission is to help your business grow with the power of technology and design.</p>
+    </section>
+        <section id="services" class="services-section">
+            <h2>Our Services</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <img src="https://img.icons8.com/ios-filled/50/000000/source-code.png" alt="Web Development" />
+                    <h3>Web Development</h3>
+                    <p>Responsive, fast, and modern websites tailored to your needs.</p>
+                </div>
+                <div class="service-card">
+                    <img src="https://img.icons8.com/ios-filled/50/000000/smartphone.png" alt="Mobile Apps" />
+                    <h3>Mobile Apps</h3>
+                    <p>iOS and Android apps that delight users and drive results.</p>
+                </div>
+                <div class="service-card">
+                    <img src="https://img.icons8.com/ios-filled/50/000000/design.png" alt="UI/UX Design" />
+                    <h3>UI/UX Design</h3>
+                    <p>Beautiful, intuitive interfaces for web and mobile platforms.</p>
+                </div>
+                <div class="service-card">
+                    <img src="https://img.icons8.com/ios-filled/50/000000/marketing.png" alt="Digital Marketing" />
+                    <h3>Digital Marketing</h3>
+                    <p>SEO, social media, and content strategies to grow your brand.</p>
+            </div>
+        </div>
+    </section>
+        <section id="portfolio" class="portfolio-section">
+            <h2>Our Work</h2>
+            <div class="portfolio-grid">
+                <div class="portfolio-item">
+                    <img src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&w=400&q=80" alt="Project 1" />
+                    <div class="portfolio-info">
+                        <h3>Project One</h3>
+                        <p>Modern business website</p>
+                    </div>
+                </div>
+                <div class="portfolio-item">
+                    <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=400&q=80" alt="Project 2" />
+                    <div class="portfolio-info">
+                        <h3>Project Two</h3>
+                        <p>Mobile app design</p>
+                    </div>
+                </div>
+                <div class="portfolio-item">
+                    <img src="https://images.unsplash.com/photo-1519125323398-675f0ddb6308?auto=format&fit=crop&w=400&q=80" alt="Project 3" />
+                    <div class="portfolio-info">
+                        <h3>Project Three</h3>
+                        <p>Branding & marketing</p>
+                </div>
+            </div>
+        </div>
+    </section>
+        <section id="contact" class="contact-section contact-modern">
+            <div class="contact-card">
+                <div class="contact-columns">
+                    <div class="contact-form-col">
+                        <form class="contact-form" autocomplete="off" novalidate>
+                            <div id="form-error" style="display:none;color:#fff;background:#e74c3c;padding:0.7em 1em;border-radius:0.5em;margin-bottom:1em;text-align:center;font-weight:600;"></div>
+                            <div class="form-row">
+                                <input type="text" id="name" name="name" required placeholder="Name" />
+                                <input type="text" id="phone" name="phone" placeholder="Contact No" />
+                            </div>
+                            <div class="form-row">
+                                <input type="email" id="email" name="email" required placeholder="Your Email" />
+                                <input type="text" id="subject" name="subject" placeholder="Subject" />
+                            </div>
+                            <div class="form-group multi-select-group">
+                                <label for="services-dropdown">Services Required *</label>
+                                <div class="custom-multiselect" id="services-multiselect">
+                                  <span class="selected-text" id="selected-services-text">Select Services</span>
+                                  <span class="dropdown-caret">▼</span>
+                                  <ul class="multi-select-list" id="services-list" role="listbox" tabindex="-1" aria-multiselectable="true">
+                                    <li role="option"><label><input type="checkbox" value="Web Development" /> Web Development</label></li>
+                                    <li role="option"><label><input type="checkbox" value="Mobile Apps" /> Mobile Apps</label></li>
+                                    <li role="option"><label><input type="checkbox" value="UI/UX Design" /> UI/UX Design</label></li>
+                                    <li role="option"><label><input type="checkbox" value="Digital Marketing" /> Digital Marketing</label></li>
+                                    <li role="option"><label><input type="checkbox" value="E-Commerce Solutions" /> E-Commerce Solutions</label></li>
+                                    <li role="option"><label><input type="checkbox" value="Cloud Services" /> Cloud Services</label></li>
+                                    <li role="option"><label><input type="checkbox" value="IT Consulting" /> IT Consulting</label></li>
+                                    <li role="option"><label><input type="checkbox" value="SEO Optimization" /> SEO Optimization</label></li>
+                                    <li role="option"><label><input type="checkbox" value="Branding" /> Branding</label></li>
+                                    <li role="option"><label><input type="checkbox" value="Support & Maintenance" /> Support & Maintenance</label></li>
+                                  </ul>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <textarea id="message" name="message" required placeholder="Message"></textarea>
+                            </div>
+                            <button type="submit" class="submit-button contact-modern-btn">Send Message Now</button>
+                        </form>
+                    </div>
+                    <div class="contact-info-col">
+                        <div class="contact-info-box">
+                            <div class="contact-info-item">
+                                <img src="https://img.icons8.com/ios-filled/40/40C4FF/new-post.png" alt="Email" />
+                                <span>digimaniainfotech@gmail.com</span>
+                            </div>
+                            <div class="contact-info-item">
+                                <img src="https://img.icons8.com/ios-filled/40/40C4FF/phone.png" alt="Phone" />
+                                <span>+91 8209806851</span>
+                            </div>
+                            <div class="contact-info-item">
+                                <img src="https://img.icons8.com/ios-filled/40/40C4FF/marker.png" alt="Location" />
+                                <span>B4, Mateshwari Complex, Gandhipath West, Lalarpura Road, Jaipur, Rajasthan, India - 302021</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">WebVazar IT Solutions</div>
+            <div class="footer-links">
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#services">Services</a>
+                <a href="#portfolio">Portfolio</a>
+                <a href="#contact">Contact</a>
+            </div>
+            <div class="footer-social">
+                <a href="#"><img src="https://img.icons8.com/ios-filled/24/000000/facebook-new.png" alt="Facebook" /></a>
+                <a href="#"><img src="https://img.icons8.com/ios-filled/24/000000/twitter.png" alt="Twitter" /></a>
+                <a href="#"><img src="https://img.icons8.com/ios-filled/24/000000/linkedin.png" alt="LinkedIn" /></a>
+                <a href="#"><img src="https://img.icons8.com/ios-filled/24/000000/instagram-new.png" alt="Instagram" /></a>
+            </div>
+        </div>
+        <div class="footer-bottom">&copy; 2024 WebVazar IT Solutions. All rights reserved.</div>
+    </footer>
+    <button id="back-to-top" title="Back to top">&#8679;</button>
+    <script src="main.js"></script>
+    <script>
+    // Navbar and footer entrance animation, section fade-in, back-to-top, and mobile menu
+    document.addEventListener('DOMContentLoaded', function() {
+      // Navbar entrance animation
+      const navbar = document.querySelector('.navbar');
+      setTimeout(() => { navbar.classList.add('in-view'); }, 100);
+      // Footer entrance animation
+      const footer = document.querySelector('footer');
+      setTimeout(() => { footer.classList.add('in-view'); }, 400);
+
+      // Section fade-in on scroll
+      const sections = document.querySelectorAll('section');
+      const revealSection = () => {
+        const triggerBottom = window.innerHeight * 0.92;
+        sections.forEach(section => {
+          const sectionTop = section.getBoundingClientRect().top;
+          if (sectionTop < triggerBottom) {
+            section.classList.add('in-view');
+          }
+        });
+      };
+      window.addEventListener('scroll', revealSection);
+      revealSection();
+
+      // Back-to-top button
+      const backToTopBtn = document.getElementById('back-to-top');
+      window.addEventListener('scroll', function() {
+        if (window.scrollY > 300) {
+          backToTopBtn.classList.add('show');
+        } else {
+          backToTopBtn.classList.remove('show');
+        }
+      });
+      backToTopBtn.addEventListener('click', function() {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      });
+
+      // Mobile menu toggle
+      const mobileToggle = document.getElementById('mobile-menu-toggle');
+      const mobileNav = document.querySelector('.mobile-nav-links');
+      if (mobileToggle && mobileNav) {
+        mobileToggle.addEventListener('click', function(e) {
+          e.stopPropagation();
+          const expanded = mobileToggle.getAttribute('aria-expanded') === 'true';
+          mobileToggle.setAttribute('aria-expanded', !expanded);
+          mobileToggle.classList.toggle('active');
+          mobileNav.classList.toggle('show');
+        });
+        // Close menu on link click
+        mobileNav.querySelectorAll('a').forEach(link => {
+          link.addEventListener('click', () => {
+            mobileToggle.classList.remove('active');
+            mobileNav.classList.remove('show');
+            mobileToggle.setAttribute('aria-expanded', 'false');
+          });
+        });
+        // Close menu on outside click
+        document.addEventListener('click', function(e) {
+          if (mobileNav.classList.contains('show') && !mobileNav.contains(e.target) && !mobileToggle.contains(e.target)) {
+            mobileToggle.classList.remove('active');
+            mobileNav.classList.remove('show');
+            mobileToggle.setAttribute('aria-expanded', 'false');
+          }
+        });
+      }
+    });
+    </script>
+</body>
+</html>
